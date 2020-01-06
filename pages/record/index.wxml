@@ -1,0 +1,20 @@
+<!-- pages/record/index.wxml -->
+<view>
+    <view class="record-list">
+        <view class="record-item" wx:for="{{list}}" wx:key="name">
+            <view>
+                <label>预约人姓名：</label>
+                <text>{{item.name}}</text>
+            </view>
+            <view>
+                <label>订单号：</label>
+                <text>{{item.key}}</text>
+            </view>
+            <view>
+                <label>订单生成时间：</label>
+                <text>{{item.CreatedDate}}</text>
+            </view>
+            <text bindtap="seeDetails">查看订单详情</text>
+        </view>
+    </view>
+</view>

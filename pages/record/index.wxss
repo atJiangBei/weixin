@@ -1,0 +1,21 @@
+/* pages/record/index.wxss */
+.record-list {
+  padding: 10px;
+}
+.record-item {
+  box-shadow: 0 0 5px #aaa;
+  border-radius: 3px;
+  padding: 10px;
+  line-height: 36px;
+  font-size: 32rpx;
+  margin-bottom: 10px;
+}
+.record-item label {
+  color: #aaa;
+}
+.record-item > view > text {
+  color: #ff7043;
+}
+.record-item > text {
+  color: #4aa5fa;
+}

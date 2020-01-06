@@ -1,0 +1,143 @@
+@keyframes stream {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+.index-container {
+}
+.index-container image {
+  width: 100%;
+}
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx 0;
+  font-size: 12px;
+  line-height: 24px;
+}
+.nav-icon {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.nav-icon image {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+}
+
+.service {
+  padding: 20rpx;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.service-top {
+  font-size: 24px;
+  line-height: 42px;
+}
+.service-bottom {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  border: 1px solid #f00;
+  color: #f00;
+  border-radius: 6px;
+  padding: 0 20px;
+}
+.service-animate-text {
+  overflow: hidden;
+  font-style: oblique;
+  text-align: left;
+  background-image: -webkit-linear-gradient(
+    left,
+    green,
+    yellow,
+    pink,
+    blue,
+    red 25%,
+    green 35%,
+    blue 50%,
+    yellow 60%,
+    red 75%,
+    pink 85%,
+    blue 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: stream 15s infinite linear;
+  background-size: 200% 100%;
+}
+.list-container {
+}
+.list-item {
+  margin: 20rpx;
+  margin-top: 0;
+  box-shadow: 0 0 5px #aaa;
+}
+.hot-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 48px;
+  text-indent: 20px;
+  margin-bottom: 10px;
+
+  position: relative;
+}
+.hot-title text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: #4aa5fa;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.list-commodity image {
+  height: 180px;
+  border-radius: 5rpx;
+}
+.item-tip {
+  font-size: 14px;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  padding-left: 5px;
+}
+.item-tip-text {
+  color: #aaa;
+  font-size: 12px;
+}
+.item-purchase {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.item-purchase-text {
+  color: #f00;
+  font-size: 16px;
+}
+.item-purchase-text text {
+  font-size: 10px;
+}
+.btn-purchase {
+  height: 30px;
+  line-height: 30px;
+  background: #f00;
+  color: #fff;
+  font-size: 13px;
+  width: 48px;
+  text-align: center;
+  border-radius: 3px;
+}

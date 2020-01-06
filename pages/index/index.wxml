@@ -1,0 +1,46 @@
+<!-- index.wxml -->
+<view class="index-container">
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{swiperList}}" wx:key="swiperList">
+        <swiper-item>
+          <image src="{{'http://jiangbei.online/images/swiper'+item+'.jpg'}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="nav-container">
+    <view class="nav-icon" wx:for="{{navList}}" wx:key="title" data-type="{{item.type}}" bindtap="seeListFromType">
+      <image src="{{ item.img }}" alt=""></image>
+      <text>{{ item.title }}</text>
+    </view>
+  </view>
+  <view class="service">
+    <text class="service-top">市区内上门服务</text>
+    <text class="service-bottom">
+      <text class="service-animate-text">30分钟服务到家</text>
+    </text>
+  </view>
+  <view class="list-container">
+    <view class="hot-title">
+      <text></text>
+      热门推荐
+    </view>
+    <view class="list-commodity">
+      <view wx:for="{{list}}" wx:key="name" class="list-item">
+        <image src="{{ item.banner }}" bindtap="toDetails"></image>
+        <view class="item-tip">
+          <text>{{ item.name }}</text>
+          <text class="item-tip-text">{{ item.sellingPoint }}</text>
+        </view>
+        <view class="item-purchase">
+          <view class="item-purchase-text">
+            <text>￥</text>
+            {{ item.price }}
+          </view>
+          <view class="btn-purchase" bindtap="toAppointment" data-item="{{item}}">预约</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

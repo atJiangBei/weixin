@@ -1,0 +1,60 @@
+/**index.wxss**/
+.userinfo {
+  background: url(http://static.jiangbei.online/imgs/success.png) no-repeat
+    center;
+  background-size: cover;
+}
+.userinfo > view {
+  background: rgba(255, 255, 255, 0.9);
+}
+.userinfo-my {
+  height: 300rpx;
+  border-bottom: 1rpx solid #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.userinfo-my button {
+  width: 300rpx;
+  line-height: 36px;
+  font-size: 32rpx;
+  color: #aaa;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #666666;
+}
+
+.userinfo-list {
+  margin: 0 10px;
+}
+.userinfo-item {
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #faf5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 33rpx;
+  color: #666666;
+}
+.userinfo-left {
+  display: flex;
+  align-items: center;
+}
+.userinfo-icon {
+  width: 42rpx;
+  height: 42rpx;
+  margin-right: 10rpx;
+}
+.userinfo-icon-more {
+  height: 40rpx;
+  width: 40rpx;
+}

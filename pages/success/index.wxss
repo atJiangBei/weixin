@@ -1,0 +1,36 @@
+/* pages/success/index.wxss */
+
+.success-title {
+  text-align: center;
+  line-height: 42px;
+  font-size: 24px;
+  color: #caccc8;
+  text-shadow: -0.3px -0.2px 0.1px #000, 0.4px 0.3px 0.1px #fff;
+}
+.success-icon {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.success-icon image {
+  width: 100%;
+}
+.success-gohome {
+  display: flex;
+  justify-content: flex-end;
+}
+.success-gohome-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  font-size: 24rpx;
+  text-align: center;
+  color: #1296db;
+}
+.success-gohome image {
+  width: 32px;
+  height: 32px;
+}

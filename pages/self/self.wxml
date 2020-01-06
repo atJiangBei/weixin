@@ -1,0 +1,22 @@
+<view class="userinfo" style="height:{{wh}}px">
+  <view style="height:{{wh}}px">
+    <view class="userinfo-my">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        获取头像昵称
+      </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <view class="userinfo-list">
+      <view class="userinfo-item" bindtap="seeRecord">
+        <view class="userinfo-left">
+          <image src="../../static/images/history.png" class="userinfo-icon"></image>
+          我的预约记录
+        </view>
+        <image src="./../../static/images/more.png" class="userinfo-icon-more"></image>
+      </view>
+    </view>
+  </view>
+</view>

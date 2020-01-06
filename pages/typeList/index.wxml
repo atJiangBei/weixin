@@ -1,0 +1,20 @@
+<!-- pages/typeList/index.wxml -->
+<view class="type-list-commodity">
+    <view wx:if="{{!list.length}}">空空如也</view>
+    <view class="list-commodity">
+        <view wx:for="{{list}}" wx:key="name" class="list-item">
+            <image src="{{ item.banner }}" bindtap="toDetails"></image>
+            <view class="item-tip">
+                <text>{{ item.name }}</text>
+                <text class="item-tip-text">{{ item.sellingPoint }}</text>
+            </view>
+            <view class="item-purchase">
+                <view class="item-purchase-text">
+                    <text>￥</text>
+                    {{ item.price }}
+                </view>
+                <view class="btn-purchase" bindtap="toAppointment" data-item="{{item}}">预约</view>
+            </view>
+        </view>
+    </view>
+</view>

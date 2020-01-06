@@ -1,0 +1,13 @@
+<!-- pages/success/index.wxml -->
+<view>
+    <view class="success-title">预约成功</view>
+    <view class="success-icon">
+        <image src="./../../static/images/success.png" />
+    </view>
+    <view class="success-gohome">
+        <view class="success-gohome-con" bindtap="gohome">
+            <image src="./../../static/images/gohome.png" />
+            <text>回到首页</text>
+        </view>
+    </view>
+</view>

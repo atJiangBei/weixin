@@ -1,0 +1,58 @@
+<!-- pages/appointments/index.wxml -->
+<view>
+				<view class="appointments-form">
+								<view class="appointments-userinfo">预约信息</view>
+								<view class="appointments-form-item">
+												<view class="appointments-form-label">姓名：</view>
+												<view>
+																<input placeholder="请输入姓名" type="text" value="{{name}}" bindinput="nameChange" />
+												</view>
+								</view>
+								<view class="appointments-form-item">
+												<view class="appointments-form-label">手机号码：</view>
+												<view>
+																<input placeholder="请输入手机号码" type="number" value="{{phone}}" bindinput="phoneChange" />
+												</view>
+								</view>
+								<view class="appointments-form-item">
+												<view class="appointments-form-label">联系地址：</view>
+												<view>
+																<input placeholder="请输您的联系地址" type="text" value="{{address}}" bindinput="addressChange" />
+												</view>
+								</view>
+								<view class="appointments-form-item">
+												<view class="appointments-form-label">上门服务时间：</view>
+												<view class="appointments-form-date">
+																<view>
+																				<picker mode="date" bindchange="dateChange">
+																								<text class="appointments-form-dateval">日期</text>
+																								：{{date}}
+																				</picker>
+																</view>
+																<view>
+																				<picker mode="time" bindchange="timeChange">
+																								<text class="appointments-form-dateval">时间</text>
+																								：{{time}}
+																				</picker>
+																</view>
+												</view>
+								</view>
+								<view class="appointments-form-item">
+												<view class="appointments-form-label">
+																推荐人
+																<text>（选填）</text>
+																：
+												</view>
+												<view>
+																<input placeholder="请输您的推荐人" type="text" value="{{recommender}}" bindinput="recommenderChange" />
+												</view>
+								</view>
+								<view class="appointments-form-btn">
+												<view>
+																<text class="appointments-commodity-num">{{commodity.price}}</text>
+																<text>元</text>
+												</view>
+												<button type="primary" bindtap="appointment">预约</button>
+								</view>
+				</view>
+</view>

@@ -1,0 +1,74 @@
+/* pages/appointments/index.wxss */
+.appointments-form {
+  padding: 60rpx 25rpx;
+  background: url(http://static.jiangbei.online/imgs/success.png) no-repeat
+    center;
+  background-size: cover;
+}
+.appointments-userinfo {
+  line-height: 100rpx;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  color: #817b7b;
+  font-style: oblique;
+  text-shadow: -0.3px -0.2px 0.1px #000, 0.4px 0.3px 0.1px #fff;
+}
+.appointments-form-item {
+  border-bottom: 1rpx solid #ddd;
+  padding: 10rpx 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+.appointments-form-item input {
+  font-size: 32rpx;
+}
+.appointments-form-label {
+  line-height: 88rpx;
+  font-size: 36rpx;
+}
+.appointments-form-label text {
+  font-size: 32rpx;
+  color: #9c9cad;
+}
+.appointments-form-date {
+  display: flex;
+}
+.appointments-form-date > view {
+  flex: 1;
+}
+.appointments-form-dateval {
+  color: #9c9cad;
+  font-size: 32rpx;
+}
+.appointments-form-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 42px;
+  border-top: 1rpx solid #dbdbdb;
+  opacity: 0.8;
+}
+.appointments-form-btn view {
+  flex: 1;
+  padding-left: 20px;
+}
+.appointments-commodity-num {
+  font-size: 22px;
+  color: #f00;
+}
+.appointments-form-btn > button {
+  background: #0084ff;
+  height: 42px;
+  line-height: 42px;
+  margin: 0;
+  font-size: 16px;
+  flex: 1;
+  border-radius: 0;
+}
+.appointments-form-btn > button:active {
+  background: #1881b8;
+}

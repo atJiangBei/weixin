@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/self/self",
+    "pages/details/index",
+    "pages/appointments/index",
+    "pages/success/index",
+    "pages/record/index",
+    "pages/typeList/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4AA5FA",
+    "navigationBarTitleText": "贴心居",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#0084ff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "static/images/home-selected.png",
+        "iconPath": "static/images/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/self/self",
+        "selectedIconPath": "static/images/self-selected.png",
+        "iconPath": "static/images/self.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}
